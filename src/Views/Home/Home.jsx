@@ -7,6 +7,8 @@ import {
 import { useAxios } from "../../Hooks/useAxios";
 
 export const Home = () => {
+
+    //Se utilizo un Custom hook que permite obtner peticiones endPoint Get
   const { data } = useAxios("https://api.chucknorris.io/jokes/categories");
 
   return (

@@ -2,6 +2,9 @@ import Axios from "axios";
 import { useState, useEffect, useRef } from "react";
 
 export const useAxios = (url) => {
+
+  //Este es un custom hook realizado a través de la librería useAxios se
+  // utilizaron los funcional hook effect, ref, state
   const [data, setdata] = useState([]);
 
   const isMountan = useRef(true);
