@@ -3,10 +3,13 @@ import "./BottonJokes.css";
 import { AiFillAlert } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { CategoryAction } from "../../actions/CategoryAction";
+import {PropTypes} from "prop-types"
 
 const ButtonJokes = ({ category }) => {
   const dispatch = useDispatch();
 
+  //Este evento onclick permite extraer la categoría brindada
+  // y recolectada a través de un dispach de redux
   const handlegetCategory = (event) => {
     dispatch(CategoryAction(event.target.name));
   };
@@ -26,3 +29,7 @@ const ButtonJokes = ({ category }) => {
   );
 };
 export default ButtonJokes;
+
+ButtonJokes.prototype = {
+  category: PropTypes.string.isRequired
+}

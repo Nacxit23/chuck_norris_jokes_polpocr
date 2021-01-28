@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 
+/*Es un global Style que permite utilizar Font personalizados*/
 .PottaFamilyFont {
   font-family: "Potta One", cursive;
 }
