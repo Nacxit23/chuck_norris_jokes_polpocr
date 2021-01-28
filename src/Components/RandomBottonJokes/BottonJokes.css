@@ -1,0 +1,21 @@
+.gradient-color {
+  font-size: 15px;
+  background: linear-gradient(
+    0deg,
+    rgba(226, 50, 176, 1) 18%,
+    rgba(253, 131, 79, 1) 66%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Icon-color {
+  color: rgba(253, 131, 79, 1);
+}
+.Icon-color:hover {
+}
+
+.button-style {
+  border: #34343f solid 3px;
+  width: 120px;
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Provider } from "react-redux";
+
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import { Home } from "./Views/Home/Home";
+import { Store } from "./Redux/Store";
+import { IndexRouter } from "./Route/IndexRouter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="backgroundApp">
+      <div className="container">
+        <div className="row justify-content-center align-items-center">
+          <div className="col-md-8">
+            <Provider store={Store}>
+              <IndexRouter />
+            </Provider>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
